@@ -3,13 +3,13 @@ package com.qa.factorial;
 public class Runner {
 
 	public static void main(String[] args) {
-		System.out.println(factorial(5));
+		System.out.println(factorial(-10));
 	}
 	
-	static int factorial(int x) {
+	public static int factorial(int x) {
 		int y=x;
 		
-		for (int i = x ; i > 2 ; i--) {
+		for (int i = x ; i > 1 ; i--) {
 			x--;
 			y *= x;
 			
