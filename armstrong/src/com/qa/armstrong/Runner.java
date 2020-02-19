@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Runner {
 	public static void main(String[] args) {
-		System.out.println(armstrong(1000));
+		System.out.println(armstrong(1000000));
 	}
 	
 	public static List<Integer> armstrong(int maxNum){
