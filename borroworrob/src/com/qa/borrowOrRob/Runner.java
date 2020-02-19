@@ -18,6 +18,7 @@ public class Runner {
 		}
 		return isPalindrome;
 	}
+	
 	//different implementation
 	public static boolean palindrome(String sentence) {
 		String sen = sentence.replace(" ", "").toLowerCase();

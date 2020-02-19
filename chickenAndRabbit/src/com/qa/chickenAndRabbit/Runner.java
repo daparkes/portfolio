@@ -2,11 +2,12 @@ package com.qa.chickenAndRabbit;
 
 public class Runner {
 	public static void main(String[] args) {
-		
+		chickAndRabbit(35, 94);
+		chickenAndRabbitMaths(35, 94);
 	}
 	
 	// Brute force
-	public void chickAndRabbit(int heads, int legs) {
+	public static void chickAndRabbit(int heads, int legs) {
 		boolean solution = false;
 		for (int i=0; i<=heads; i++) {
 			int r = heads-i;
@@ -23,7 +24,7 @@ public class Runner {
 	}
 	
 	// Algebraic solution
-	public void chickenAndRabbitMaths(int heads, int legs) {
+	public static void chickenAndRabbitMaths(int heads, int legs) {
 		int rabbit = (legs/2) - heads;
 		System.out.println("rabbits: " + rabbit);
 		int chicken = heads - rabbit;
