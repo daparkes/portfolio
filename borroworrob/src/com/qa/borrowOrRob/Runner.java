@@ -3,6 +3,7 @@ package com.qa.borrowOrRob;
 public class Runner {
 	public static void main(String[] args) {
 		System.out.println(borrowOrRob("race car"));
+		System.out.println(palindrome("Borrow Or Rob"));
 	}
 	
 	public static boolean borrowOrRob(String sentence) {
@@ -16,5 +17,14 @@ public class Runner {
 			}
 		}
 		return isPalindrome;
+	}
+	//different implementation
+	public static boolean palindrome(String sentence) {
+		String sen = sentence.replace(" ", "").toLowerCase();
+		String reversedString = "";
+		for (int i = sen.length()-1; i>=0; i--) {
+			reversedString = reversedString + sen.charAt(i);
+		}
+		return sen.equals(reversedString);
 	}
 }
