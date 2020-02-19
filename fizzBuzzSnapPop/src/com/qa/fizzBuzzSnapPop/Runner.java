@@ -2,7 +2,7 @@ package com.qa.fizzBuzzSnapPop;
 
 public class Runner {
 	public static void main(String[] args) {
-		System.out.println(fizzBuzzSnapPop(105));
+		System.out.println(fizzBuzzSnapPop(2));
 	}
 	
 	public static String fizzBuzzSnapPop(int num) {
