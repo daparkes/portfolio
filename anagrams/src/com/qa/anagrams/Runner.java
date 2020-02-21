@@ -5,14 +5,14 @@ import java.util.List;
 
 public class Runner {
 	public static void main(String[] args) {
-		System.out.println(anagrams("hello", "oll eh"));
+		System.out.println(anagrams("Hello", "oll eh"));
 	}
 	
 	public static boolean anagrams(String a, String b) {
 		List<Character> listA = new ArrayList<>();
 		List<Character> listB = new ArrayList<>();
-		char[] charA = a.replace(" ","").toCharArray();
-		char[] charB = b.replace(" ","").toCharArray();
+		char[] charA = a.replace(" ","").toLowerCase().toCharArray();
+		char[] charB = b.replace(" ","").toLowerCase().toCharArray();
 		
 		for (char c : charA) {
 			listA.add(c);

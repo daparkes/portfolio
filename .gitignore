@@ -4,5 +4,6 @@ maven-tutorial
 .DS_Store
 *.settings/
 *target/
-*.project/
+.project/
+.classpath
 *bin/
