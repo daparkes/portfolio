@@ -2,7 +2,7 @@ package com.qa.indexOf;
 
 public class Runner {
 	public static void main(String[] args) {
-		System.out.println(indexOf('e', "I've got a lovely bunch of coconuts"));
+		System.out.println(indexOf('e',""));
 	}
 
 	public static int indexOf(char c, String sentence) {
